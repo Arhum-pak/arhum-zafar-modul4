@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boka din vistelse på Hotell Aurora. Välj datum, antal gäster och antal rum i bokningsformuläret.">
+    <title>Hotell Aurora | Boka</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo-link" href="index.html" aria-label="Hotell Aurora startsida">
+            <img class="logo" src="bilder/logo.webp" alt="Hotell Aurora logotyp">
+        </a>
+        <div class="header-content">
+            <img class="header-image" src="bilder/hero.webp">
+            <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">Meny <span aria-hidden="true">☰</span></button>
+            <nav id="main-nav" class="main-nav" aria-label="Huvudmeny">
+                <a href="index.html">Start</a>
+                <a href="boka.html" aria-current="page">Boka</a>
+                <a href="kontakta.html">Kontakta</a>
+                <a href="matsedel.html">Matsedel</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-section">
+            <h1>Boka rum</h1>
+            <form class="booking-form" action="#" method="post">
+                <div class="form-row">
+                    <label for="first-name">Förnamn</label>
+                    <input id="first-name" name="first-name" type="text" required>
+                </div>
+                <div class="form-row">
+                    <label for="last-name">Efternamn</label>
+                    <input id="last-name" name="last-name" type="text" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Telefon</label>
+                    <input id="phone" name="phone" type="tel" required>
+                </div>
+                <div class="form-row">
+                    <label for="arrival">Ankomst</label>
+                    <input id="arrival" name="arrival" type="date" required>
+                </div>
+                <div class="form-row">
+                    <label for="departure">Avgång</label>
+                    <input id="departure" name="departure" type="date" required>
+                </div>
+                <div class="number-grid">
+                    <div>
+                        <label for="adults">Vuxna</label>
+                        <input id="adults" name="adults" type="number" min="1" value="1" required>
+                    </div>
+                    <div>
+                        <label for="children">Barn</label>
+                        <input id="children" name="children" type="number" min="0" value="0" required>
+                    </div>
+                    <div>
+                        <label for="rooms">Antal rum</label>
+                        <input id="rooms" name="rooms" type="number" min="1" value="1" required>
+                    </div>
+                </div>
+                <button class="button form-button" type="submit">Boka</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Hotell Aurora | Bemarinsgatan 6 | 54 321 Bramada | 045 - 65 43 21</p>
+    </footer>
+</body>
+</html>

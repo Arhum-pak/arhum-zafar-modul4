@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upptäck Hotell Aurora, ett bekvämt hotell med trevliga rum och en välkomnande atmosfär.">
+    <title>Hotell Aurora | Start</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo-link" href="index.html" aria-label="Hotell Aurora startsida">
+            <img class="logo" src="bilder/logo.webp" alt="Hotell Aurora logotyp">
+        </a>
+        <div class="header-content">
+            <img class="header-image" src="bilder/hero.webp">
+            <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">Meny <span aria-hidden="true">☰</span></button>
+            <nav id="main-nav" class="main-nav" aria-label="Huvudmeny">
+                <a href="index.html" aria-current="page">Start</a>
+                <a href="boka.html">Boka</a>
+                <a href="kontakta.html">Kontakta</a>
+                <a href="matsedel.html">Matsedel</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h1>Välkommen till Hotel Aurora</h1>
+            <div class="slideshow" aria-label="Bildspel med bilder från hotellet">
+                <button class="slide-button previous" type="button">&#8592;</button>
+                <img id="slide-image" src="bilder/hotel1.webp">
+                <button class="slide-button next" type="button">&#8594;</button>
+                <div class="slide-dots" aria-label="Välj bild">
+                    <button class="dot active" type="button" data-slide="0"aria-current="true"></button>
+                    <button class="dot" type="button" data-slide="1"></button>
+                    <button class="dot" type="button" data-slide="2"></button>
+                </div>
+            </div>
+            <p class="intro">Upplev en bekväm vistelse på Hotell Aurora i Bramada. Här kan du koppla av, äta gott och bo nära stadens sevärdheter.</p>
+            <a class="button" href="boka.html">Boka nu</a>
+        </section>
+
+ 
+    </main>
+
+    <footer class="site-footer">
+        <p>Hotell Aurora | Bemarinsgatan 6 | 54 321 Bramada | 045 - 65 43 21</p>
+    </footer>
+</body>
+</html>

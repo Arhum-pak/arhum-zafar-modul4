@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakta Hotell Aurora för frågor om hotellet, hitta kontaktuppgifter och se kartan över området.">
+    <title>Hotell Aurora | Kontakta</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo-link" href="index.html" aria-label="Hotell Aurora startsida">
+            <img class="logo" src="bilder/logo.webp" alt="Hotell Aurora logotyp">
+        </a>
+        <div class="header-content">
+            <img class="header-image" src="bilder/hero.webp">
+            <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">Meny <span aria-hidden="true">☰</span></button>
+            <nav id="main-nav" class="main-nav" aria-label="Huvudmeny">
+                <a href="index.html">Start</a>
+                <a href="boka.html">Boka</a>
+                <a href="kontakta.html" aria-current="page">Kontakta</a>
+                <a href="matsedel.html">Matsedel</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h1>Kontakta oss</h1>
+                <div class="info-box">
+                    <p><b>Hotell Aurora</b><br>Bramada, Sverige<br>Telefon: 045 - 65 43 21<br>E-post: info@hotellaurora.com</p>
+                </div>
+            </div>
+            <div class="map-area">
+                <h2>Karta</h2>
+                <iframe
+                    src="https://maps.google.com/maps?q=40.6319297,14.5968143&z=14&output=embed"
+                    title="Google Maps-karta över Hotell Aurora"
+                    width="600"
+                    height="350"
+                    style="border:0;"
+                    allowfullscreen>
+                </iframe>
+                <p class="maps-instruction">Kartan visar hotellets område.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Hotell Aurora | Bemarinsgatan 6 | 54 321 Bramada | 045 - 65 43 21</p>
+    </footer>
+</body>
+</html>

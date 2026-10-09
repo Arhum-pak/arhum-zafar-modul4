@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Se matsedeln på Hotell Aurora med alternativ för frukost, lunch och middag.">
+    <title>Hotell Aurora | Matsedel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo-link" href="index.html" aria-label="Hotell Aurora startsida">
+            <img class="logo" src="bilder/logo.webp" alt="Hotell Aurora logotyp">
+        </a>
+        <div class="header-content">
+            <img class="header-image" src="bilder/hero.webp">
+            <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">Meny <span aria-hidden="true">☰</span></button>
+            <nav id="main-nav" class="main-nav" aria-label="Huvudmeny">
+                <a href="index.html">Start</a>
+                <a href="boka.html">Boka</a>
+                <a href="kontakta.html">Kontakta</a>
+                <a href="matsedel.html" aria-current="page">Matsedel</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-section menu-section">
+            <h1>Matsedel</h1>
+            <div class="meal-grid">
+                <article class="meal-card">
+                    <h2>Frukost</h2>
+                    <p>Bröd och kaffe<br>Frukt och yoghurt</p>
+                    <b>Pris: 50 kr</b>
+                </article>
+                <article class="meal-card">
+                    <h2>Lunch</h2>
+                    <p>Panerad fisk med remouladsås och kokt potatis</p>
+                    <b>Pris: 90 kr</b>
+                </article>
+                <article class="meal-card">
+                    <h2>Middag</h2>
+                    <p>Kycklingbröst med rostad mandelpotatis och dragonsås</p>
+                    <b>Pris: 150 kr</b>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Hotell Aurora | Bemarinsgatan 6 | 54 321 Bramada | 045 - 65 43 21</p>
+    </footer>
+</body>
+</html>
